@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Music Player</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel ="icon" href = "https://cdn.vectorstock.com/i/1000x1000/15/09/flat-music-sign-circle-icon-with-long-shadow-vector-5531509.webp
+">
+<script src="https://kit.fontawesome.com/93aea53b3b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div class="container">
+		
+		<div class = "window">
+			
+			<div class = 'player'>
+				
+				<img src="images/cdPlayer.png" class='cd'>
+				<h1 id = 'song_title'> Song Name</h1>
+				<div class="slidecontainer">
+					<i class="fas fa-volume-down"></i>
+					<input type="range" min ="0" max = "100" value = "50" class = "slider ">
+					<i class = "fas fa-volume-up"></i>
+				</div>
+
+				<div class="controls">
+					<button id = "previous" class='buttons'>
+						<i class="fa-solid fa-backward-step" ></i>
+					</button>
+					<button id = 'play-pause' class="buttons">
+						<i class ='fa-solid fa-play' ></i>
+					</button>
+					<button id = 'next' class='buttons'>
+					<i class="fa-solid fa-forward-step"></i>
+					</button>
+				</div>
+
+			</div>
+			<div class = 'playlist'><h2> Playlist</h2>
+				<ul> 
+					<li data-src="music/1shortsong.mp3" data-name="short_song" data-index = "0"><span>Short English Song </span>00:32</li>
+
+					<li data-src="music/2everybody.mp3" data-name="2everybody" data-index = "1"><span>2Everybody </span>00:54</li>
+										<li data-src="music/1shortsong.mp3" data-name="short_song" data-index = "0"><span>Short English Song </span>00:32</li>
+					<li data-src="music/everybody.mp3" data-name="everybody" data-index = "1"><span>Everybody </span>00:54</li>
+					<li data-src="music/1shortsong.mp3" data-name="short_song" data-index = "0"><span>Short English Song </span>00:32</li>
+					<li data-src="music/everybody.mp3" data-name="everybody" data-index = "1"><span>Everybody </span>00:54</li>
+										<li data-src="music/1shortsong.mp3" data-name="short_song" data-index = "0"><span>Short English Song </span>00:32</li>
+					<li data-src="music/everybody.mp3" data-name="everybody" data-index = "1"><span>Everybody </span>00:54</li>
+					<li data-src="music/1shortsong.mp3" data-name="short_song" data-index = "0"><span>Short English Song </span>00:32</li>
+					<li data-src="music/everybody.mp3" data-name="everybody" data-index = "1"><span>Everybody </span>00:54</li>
+
+
+				</ul>
+				<audio src="" id = "audio" ></audio>
+			</div>
+
+		</div>
+
+	</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

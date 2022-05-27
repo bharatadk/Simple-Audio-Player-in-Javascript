@@ -1,0 +1,146 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	height: 100vh;
+	font-family: hack;
+}
+
+.container{
+	width : 100%;
+	height: 100%;
+	background-color: royalblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.window{
+	min-height: 450px;
+	width: 800px;
+	background-color: whitesmoke;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: row;
+}
+
+.player{
+	width: 50%;
+	padding: 3em;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 0n;
+	position: relative;
+	align-items: center;
+	justify-content: flex-end;
+	background: #f5a142;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;	
+}
+
+.player img{
+	height: 200px;
+	top: -100px;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.player h1{
+	color: orangered;
+	margin-bottom: 20px;
+
+}
+
+.slider{
+	opacity: 0.5;
+}
+
+.slider:hover{
+	opacity: 1;
+}
+
+.controls{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.controls > button{
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color:transparent;
+	padding: 20px;
+
+}
+.controls > button > i{
+	font-size: 40px;
+	color: dimgray;
+}
+.controls > #play-pause >i{
+	font-size: 80px;
+}
+.playlist{
+	width: 50%;
+	flex: 1 1 0n;
+	padding: 3em;
+	background-color: lightgray;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+
+}
+
+.playlist > h2 {
+		margin-bottom: 20px;
+}
+
+.playlist > ul {
+	height: 400px;
+
+	list-style-type: none;
+	padding: 0 5px;
+	overflow-y : scroll;
+}
+
+.playlist > ul >li {
+	padding: 20px;
+	display: flex;
+	cursor: pointer;
+	border-bottom: 1px solid gray;
+}
+
+.playlist > ul >li.active {
+	font-weight: bold;
+}
+
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: darkorange;
+}
+
+
+.cd-animation{
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
